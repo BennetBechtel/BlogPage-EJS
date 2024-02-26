@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Serif", serif;
+}
+
+/* nav & footer styles*/
+nav {
+  display: grid;
+  grid-template-rows: auto auto;
+  margin: 16px 20px;
+  padding-bottom: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: gray;
+}
+
+nav a {
+  color: gray;
+  text-decoration: none;
+}
+
+.blogHeader {
+  color: black;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.navbar a:hover {
+  color: rgb(49, 49, 49);
+}
+
+.navbar a:active {
+  color: rgb(24, 24, 24);
+}
+
+.navbar {
+  color: gray;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.anchor-list a {
+  margin-left: 10px;
+}
+
+footer {
+  font-size: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* index styles*/
+.blogs-header {
+  margin: 0 20px;
+  font-size: 24px;
+}
+
+.blog-display {
+  margin: 20px 30px;
+  margin-bottom: 30px;
+}
+
+.blog-display h3 {
+  margin-bottom: 6px;
+}
+
+.blog-display p {
+  margin-bottom: 6px;
+}
+
+.blog-display a {
+  text-decoration: none;
+  color: rgb(88, 88, 88);
+}
+
+/* about styles*/
+.about {
+  margin: 0 20px;
+}
+.about p {
+  margin: 10px 0;
+}
+
+/* create styles*/
+.create-blog {
+  margin: 0 10px;
+}
+
+.create-blog form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.create-blog input,
+.create-blog textarea {
+  display: block;
+  width: 1fr;
+  margin: 10px 0;
+  padding: 8px;
+}
+.create-blog label {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 24px;
+}
+textarea {
+  height: 120px;
+  resize: none;
+}
+.create-blog button {
+  margin-top: 20px;
+  background: crimson;
+  color: white;
+  padding: 6px;
+  border: 0;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+/* details styles */
+.details {
+  position: relative;
+  margin: 20px 30px;
+  margin-bottom: 30px;
+}
+
+.details h2 {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.details p {
+  font-size: 20px;
+}
+
+.blog-content {
+  margin: 10px 10px;
+}
+
+.delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 10px;
+  padding: 6px;
+  transition: opacity 0.15s;
+}
+
+.delete img {
+  height: 40px;
+}
+
+.delete:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+/* 404 styles*/
+.not-found {
+  margin: 0 16px;
+}
+
+/* Media --- iPhone Screen */
+@media all and (max-width: 460px) {
+  /* nav styles */
+  nav {
+    margin: 16px 20px;
+    padding-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: gray;
+  }
+
+  nav p {
+    display: none;
+  }
+
+  .anchor-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .anchor-list a {
+    margin-left: 0;
+  }
+
+  .blogHeader {
+    text-align: center;
+  }
+}
