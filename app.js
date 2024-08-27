@@ -8,7 +8,7 @@ const app = express();
 
 // connect to mongodb
 const dbURI =
-  "mongodb+srv://blog_page_user:8eBwgJNT60SAWOhd@blogpage.qvrajl1.mongodb.net/BlogData?retryWrites=true&w=majority";
+  "mongodb_connection_string";
 mongoose
   .connect(dbURI)
   .then((result) =>
